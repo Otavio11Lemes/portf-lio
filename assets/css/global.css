@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+@font-face {
+    font-family: 'neue-machina';
+    src: url("assets/fonts/neue-machina-regular.otf");
+}
+
+body.gradiente {
+    background: linear-gradient(45deg, #58065e, #4102de);
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Definir a altura como 100% da altura da janela de visualização (viewport) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main {
+    text-align: center; /* Centralizar o conteúdo dentro do elemento .main */
+}
+
+.header {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 5rem;
+}
+@media only screen and (min-width: 768px){
+    .main{
+        max-width:1024 ;
+        margin: 1rem auto;
+    }
+    .main::before, main::after{
+        width: 70vw;
+    }
+
+}
