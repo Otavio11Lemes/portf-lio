@@ -23,6 +23,10 @@
     color: white;
     border: none;
 }
+.acordeon .trigger h2{
+    margin: 0;
+    font-size: 1.5rem;
+}
 .acordeon .trigger:hover{
     cursor: pointer;
 }
@@ -34,7 +38,8 @@
     height: 2rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('assets/images/icons/Polygon1.svg');    
+    background-image: url(''); 
+    transition: .25s;   
 }
 .acordeon.open{
     background-color:rebeccapurple ;
@@ -46,9 +51,15 @@
 }
 
 .acordeon .content{
-    display: none;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition:opacity .25s ease-in-out ; 
 }
 
 .acordeon.open .content{
-    display: inline-block;
+    display: block;
+    padding: 0 1rem 1rem 2rem; 
+    height: auto;
+    opacity: 1;
 }
