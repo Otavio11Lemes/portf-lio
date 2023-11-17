@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
@@ -17,69 +20,110 @@
     <link rel="stylesheet" href="./assets/css/languages.css">
     <link rel="stylesheet" href="./assets/css/projetos.css">
     <link rel="stylesheet" href="/assets/css/experience.css">
+    <link rel="stylesheet" href="assets/css/skills.css">
 </head>
+
 <body class="gradiente">
     <div class="main">
         <header class="header">
             <h1 class="title">Olá, eu sou o Otávio Lemes</h1>
-    
+
             <img src="./assets/images/perfil.jpeg" alt="foto de Otavio Lemes" class="photo">
-    
+
             <div class="information">
                 <p>Gerente Comercial</p>
-                <p>Goianápolis-Go</p>
+                <p class="city">Goianápolis-Go</p>
                 <p class="phone"><a href="tel:(62)9 9663-0466">(62) 9 9663-0466</a></p>
                 <p>Junior Developer</p>
                 <p class="email"><a href="mailto:otavio11lemes@outlook.com">otavio11lemes@outlook.com</a></p>
-    
             </div>
-            
         </header>
+    
         <section class="acordeon">
             <button class="trigger">
-                <h2>Idiomas</h2> 
+                <h2>Skills</h2>
             </button>
             <div class="content">
-                <ul class="languages">
-                    <li> Inglês </li>
-                    <li> Português </li>
-                 </ul>
-                
+                <div class="skills">
+                    <section class="hard skills">
+                        <h3>Habilidades profissionais</h3>
+                        <ul>
+                            <li>
+                                <img src="assets/images/icons/python.svg" alt="python" title="python">
+                            </li>
+                            <li>
+                                <img src="assets/images/icons/github.svg" alt="github" title="github">
+                            </li>
+                            <li>
+                                <img src="assets/images/icons/java.svg" alt="java" title="java">
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="soft skills">
+                        <h3>Habilidades profissionais</h3>
+                        <ul>
+                            <li>Liderança</li>
+                            <li>Trabalho em equipe</li>
+                            <li>Facilidade em comunicação</li>
+                            <li>Organização</li>
+                            <li>Comprometimento com Resultados</li>
+                        </ul>
+                    </section>
+                </div>
+
+
             </div>
-    </section>
-    <section class="acordeon">
-        <button class="trigger" type="button">
-            <h2>Projetos</h2>
-        </button>
-        <div class="content">
-            <ul class="projetos" >
-                <li>
-                <span class="title github">
-                    <h3>exeptions1-java</h3>
-                </span>
-                <a href="https://github.com/Otavio11Lemes/exeptions1-java" target="_blank">https://github.com/Otavio11Lemes/exeptions1-java
-                </a>
-            </li>
-        </ul>
-            
-            
-        </div>
-    </section>
-    <section class="acordeon">
-        <button class="trigger" type="button">
-               <h2>Experiência Profissional</h2> 
-        </button>
-        <div class="content">
-            <ul class="experience">
-                <li>
-                    <span class="title" >front-end</span>
-                    <span class="period">Jan 2020 - Current</span>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque neque molestiae tempore obcaecati molestias voluptatibus iure modi, id laboriosam veritatis consequuntur animi minima delectus a doloribus sed ab porro vitae?</p>
-                </li>
-             </ul>
-            
-        </div>
-    </section>
-    <script src="./assets/js/acordeon.js"></script>
+        </section>
+
+            <section class="acordeon">
+                <button class="trigger">
+                    <h2>Idiomas</h2>
+                </button>
+                <div class="content">
+                    <ul class="languages">
+                        <li> Inglês </li>
+                        <li> Português </li>
+                    </ul>
+
+                </div>
+            </section>
+            <section class="acordeon">
+                <button class="trigger" type="button">
+                    <h2>Projetos</h2>
+                </button>
+                <div class="content">
+                    <ul class="projetos">
+                        <li>
+                            <span class="title github">
+                                <h3>exeptions1-java</h3>
+                            </span>
+                            <a href="https://github.com/Otavio11Lemes/exeptions1-java"
+                                target="_blank">https://github.com/Otavio11Lemes/exeptions1-java
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </section>
+            <section class="acordeon">
+                <button class="trigger" type="button">
+                    <h2>Experiência Profissional</h2>
+                </button>
+                <div class="content">
+                    <ul class="experience">
+                        <li>
+                            <span class="title">Buscando primeira oportunidade na area</span>
+                            <span class="period">Jan xxxx - Current</span>
+                            <p>:\</p>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+            <script src="./assets/js/acordeon.js"></script>
+        
+    </div>            
 </body>
+
 </html>

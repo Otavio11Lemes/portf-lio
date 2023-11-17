@@ -12,7 +12,7 @@ body.gradiente {
     background: linear-gradient(45deg, #58065e, #4102de);
     margin: 0;
     padding: 0;
-    height: 100vh; /* Definir a altura como 100% da altura da janela de visualização (viewport) */
+    height: 130vh; /* Definir a altura como 100% da altura da janela de visualização (viewport) */
     display: flex;
     justify-content: center;
     align-items: center;

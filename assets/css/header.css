@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .header::after {
     content: '';
@@ -31,7 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 98%;
 }
 .information a {
     color: white;
@@ -41,7 +42,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0.5rem; /* Corrigindo o valor da margem (removendo o ponto) */
+    margin: .5rem; /* Corrigindo o valor da margem (removendo o ponto) */
 }
 
 .information p::before {
@@ -49,9 +50,22 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("./assets/image5.svg"); /* Verifique o caminho da imagem */
+    margin: 0.25rem;
+    background-image: url("C:Users/otavi/OneDrive/Documentos/node-scripts/portfolio/assets/images/icons/header.svg"); 
     background-repeat: no-repeat;
     fill: #000000;
+}
+.information .city::before{
+    background-image: url("C:Users/otavi/OneDrive/Documentos/node-scripts/portfolio/assets/images/icons/localizator.svg"); 
+
+}
+.information .phone::before{
+    background-image: url("C:Users/otavi/OneDrive/Documentos/node-scripts/portfolio/assets/images/icons/phone.svg"); 
+
+}
+.information .email::before{
+    background-image: url("C:Users/otavi/OneDrive/Documentos/node-scripts/portfolio/assets/images/icons/email.svg"); 
+
 }
 
 @media only screen and (min-width: 768px){
